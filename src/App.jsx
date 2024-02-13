@@ -13,60 +13,60 @@ function App() {
   const [valueSi, setValueSi] = useState(false)
 
   let random = [{
-    id: 1,
-    description: "Di si por favor ",
-    img: "https://i.pinimg.com/originals/db/aa/c1/dbaac13f6278b91a15e480752b8a7242.gif"
+    id: 0,
+    description: "Di si por favor .",
+    img: "https://media.tenor.com/9UfBFztRThcAAAAi/puuung-lazy.gif"
   },
   {
     id: 1,
-    description: "Piénsalo de nuevo vida",
-    img: "https://i.pinimg.com/originals/77/6b/21/776b215bed3deeef47fd3aa657685a18.gif"
+    description: "Piénsalo de nuevo vida .",
+    img: "https://media.tenor.com/iYCgIAu9VPEAAAAi/puuung-puung.gif"
   }
     ,
   {
     id: 2,
-    description: "Rindete mi amor ",
-    img: "https://www.gifmaniacos.es/wp-content/uploads/2019/05/gatitos-kawaii-gifmaniacos.es-19.gif"
+    description: "Rindete mi amor .",
+    img: "https://i.makeagif.com/media/10-09-2019/3by8eu.gif"
   },
   {
     id: 3,
-    description: "Como que no? ",
-    img: "https://i.pinimg.com/originals/e1/c3/88/e1c388133e0f998e25bb17c837b74a14.gif"
+    description: "Como que no? .",
+    img: "https://j.gifs.com/lR2ogj.gif"
   },
   {
     id: 4,
-    description: "Pucha... segura? ",
-    img: "https://media.tenor.com/Bn88VELdNI8AAAAi/peach-goma.gif"
+    description: "Pucha... segura? .",
+    img: "https://i.pinimg.com/originals/f5/7f/0c/f57f0c993951ba7fbdb952d962c5a006.gif"
   },
   {
     id: 5,
-    description: "A caray!! ",
-    img: "https://i.pinimg.com/originals/c6/b3/0d/c6b30d1a2dc178aeb92de63295d4ae64.gif"
+    description: "A caray!! ni por un cafesito?",
+    img: "https://i.pinimg.com/originals/55/8f/e3/558fe348b78e0b899abdbb10863d3952.gif"
   },
   {
     id: 6,
     description: "Que grosera :'( ",
-    img: "https://media.tenor.com/N2oqtqaB_G0AAAAi/peach-goma.gif"
+    img: "https://i.pinimg.com/originals/73/be/87/73be873c7a55c865169c9923ea779fc4.gif"
   },
   {
     id: 7,
     description: "Ofendes al Pequeño Ezquiel ",
-    img: "https://i.pinimg.com/originals/db/aa/c1/dbaac13f6278b91a15e480752b8a7242.gif"
+    img: "https://gifdb.com/images/high/love-hug-puuung-illustration-4lkryoo0l0sot04v.gif"
   },
   {
     id: 8,
-    description: "Confía en el destino vida ",
-    img: "https://media.tenor.com/cbEccaK9QxMAAAAi/peach-goma.gif"
+    description: "Confía en el destino vida .",
+    img: "https://i.pinimg.com/originals/18/da/ef/18daef8dca88c29b52a176652c30d57e.gif"
   },
   {
     id: 9,
     description: "No seas grosera >:( ",
-    img: "https://i.pinimg.com/originals/db/aa/c1/dbaac13f6278b91a15e480752b8a7242.gif"
+    img: "https://i.makeagif.com/media/10-13-2022/cj5BhQ.gif"
   },
   {
     id: 10,
-    description: "No te arrepentirás mi amor ",
-    img: "https://media.tenor.com/I7KdFaMzUq4AAAAi/peach-goma.gif"
+    description: "No te arrepentirás mi amor .",
+    img: "https://pa1.aminoapps.com/7236/041dba4232def15ab56d6efd01b2739caee2704ar1-640-640_hq.gif"
   }]
 
   const randomResponse = () => {
@@ -89,9 +89,10 @@ function App() {
       {
         !valueSi ? (
           <div className="p-5">
-            <h1 className="text-white font-bold text-5xl text-center">Paola Rodrigo ¿Quieres ser mi San Valentin?</h1>
+            <h1 className="text-white font-bold text-5xl text-center mb-8">Paola Rodrigo ¿Quieres ser mi San Valentin?</h1>
+            
             <img src={Object.keys(randomValor).length === 0 ?
-              "https://i.pinimg.com/originals/db/aa/c1/dbaac13f6278b91a15e480752b8a7242.gif" : randomValor.img} alt="San Valentin" className="mx-auto" width={400} height={400} />
+              "https://pa1.aminoapps.com/7236/6dd9318f0a7141628c1154b564e0ce28572af3b7r1-370-300_hq.gif" : randomValor.img} alt="San Valentin" className="mx-auto" width={400} height={400} />
             <div className="grid grid-cols-1 md:grid-cols-2 mt-10 gap-5 items-center">
               <button onClick={() => {
                 setValueSi(true)
@@ -116,9 +117,11 @@ function App() {
             </div>
           </div>
         ) : (
-          <div className="flex justify-center items-center flex-col space-y-10">
+          <div className="flex justify-center items-center flex-col">
             <h1 className="text-4xl text-white font-bold">Sabia que dirias que si mi amor ❤️!</h1>
-            <img src="https://i.pinimg.com/originals/9b/dc/c6/9bdcc6206c1d36a37149d31108c6bb41.gif" alt="" className="mx-auto" />
+            <img src="https://i.pinimg.com/originals/c6/4b/59/c64b594e04cdc0c64b4970c62cbe4f28.gif" alt="" className="mx-auto" />
+            <h1 className="text-4xl text-white font-bold">Te amo infinitamente mi vida ❤️</h1>
+            <h1 className="text-white font-bold">Con amor: tu esposo Cris </h1>
             <span hidden>{document.title = 'Sabia que dirias que si ❤️!'}</span>
           </div>
         )
