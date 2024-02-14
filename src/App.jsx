@@ -13,60 +13,60 @@ function App() {
   const [valueSi, setValueSi] = useState(false)
 
   let random = [{
-    id: 0,
-    description: "Di si por favor .",
-    img: "https://media.tenor.com/9UfBFztRThcAAAAi/puuung-lazy.gif"
+    id: 1,
+    description: "Di si por favor",
+    img: "https://i.pinimg.com/originals/db/aa/c1/dbaac13f6278b91a15e480752b8a7242.gif"
   },
   {
     id: 1,
-    description: "Piénsalo de nuevo vida .",
-    img: "https://media.tenor.com/iYCgIAu9VPEAAAAi/puuung-puung.gif"
+    description: "Piénsalo de nuevo.",
+    img: "https://i.pinimg.com/originals/77/6b/21/776b215bed3deeef47fd3aa657685a18.gif"
   }
     ,
   {
     id: 2,
-    description: "Rindete mi amor .",
-    img: "https://i.makeagif.com/media/10-09-2019/3by8eu.gif"
+    description: "Vamos, atrévete a decir que sí.",
+    img: "https://www.gifmaniacos.es/wp-content/uploads/2019/05/gatitos-kawaii-gifmaniacos.es-19.gif"
   },
   {
     id: 3,
-    description: "Como que no? .",
-    img: "https://j.gifs.com/lR2ogj.gif"
+    description: "No tengas miedo, será genial.",
+    img: "https://i.pinimg.com/originals/e1/c3/88/e1c388133e0f998e25bb17c837b74a14.gif"
   },
   {
     id: 4,
-    description: "Pucha... segura? .",
-    img: "https://i.pinimg.com/originals/f5/7f/0c/f57f0c993951ba7fbdb952d962c5a006.gif"
+    description: "Confía en mí, será divertido.",
+    img: "https://media.tenor.com/Bn88VELdNI8AAAAi/peach-goma.gif"
   },
   {
     id: 5,
-    description: "A caray!! ni por un cafesito?",
-    img: "https://i.pinimg.com/originals/55/8f/e3/558fe348b78e0b899abdbb10863d3952.gif"
+    description: "No tengas dudas, te haré sonreír.",
+    img: "https://i.pinimg.com/originals/c6/b3/0d/c6b30d1a2dc178aeb92de63295d4ae64.gif"
   },
   {
     id: 6,
-    description: "Que grosera :'( ",
-    img: "https://i.pinimg.com/originals/73/be/87/73be873c7a55c865169c9923ea779fc4.gif"
+    description: "Te prometo que será inolvidable.",
+    img: "https://media.tenor.com/N2oqtqaB_G0AAAAi/peach-goma.gif"
   },
   {
     id: 7,
-    description: "Ofendes al Pequeño Ezquiel ",
-    img: "https://gifdb.com/images/high/love-hug-puuung-illustration-4lkryoo0l0sot04v.gif"
+    description: "No dejes que el miedo te detenga.",
+    img: "https://i.pinimg.com/originals/db/aa/c1/dbaac13f6278b91a15e480752b8a7242.gif"
   },
   {
     id: 8,
-    description: "Confía en el destino vida .",
-    img: "https://i.pinimg.com/originals/18/da/ef/18daef8dca88c29b52a176652c30d57e.gif"
+    description: "Confía en el destino, nos está dando una señal.",
+    img: "https://media.tenor.com/cbEccaK9QxMAAAAi/peach-goma.gif"
   },
   {
     id: 9,
-    description: "No seas grosera >:( ",
-    img: "https://i.makeagif.com/media/10-13-2022/cj5BhQ.gif"
+    description: "Confía en mí.",
+    img: "https://i.pinimg.com/originals/db/aa/c1/dbaac13f6278b91a15e480752b8a7242.gif"
   },
   {
     id: 10,
-    description: "No te arrepentirás mi amor .",
-    img: "https://pa1.aminoapps.com/7236/041dba4232def15ab56d6efd01b2739caee2704ar1-640-640_hq.gif"
+    description: "No te arrepentirás.",
+    img: "https://media.tenor.com/I7KdFaMzUq4AAAAi/peach-goma.gif"
   }]
 
   const randomResponse = () => {
@@ -89,21 +89,21 @@ function App() {
       {
         !valueSi ? (
           <div className="p-5">
-            <h1 className="text-white font-bold text-5xl text-center mb-8">Paola Rodrigo ¿Quieres ser mi San Valentin?</h1>
+            <h1 className="text-white font-bold text-5xl text-center mb-8">María Moran ¿Quires estar a mi lado por siempre?</h1>
             
             <img src={Object.keys(randomValor).length === 0 ?
-              "https://pa1.aminoapps.com/7236/6dd9318f0a7141628c1154b564e0ce28572af3b7r1-370-300_hq.gif" : randomValor.img} alt="San Valentin" className="mx-auto" width={400} height={400} />
+              "https://i.gifer.com/nRm.gif" : randomValor.img} alt="San Valentin" className="mx-auto" width={400} height={400} />
             <div className="grid grid-cols-1 md:grid-cols-2 mt-10 gap-5 items-center">
               <button onClick={() => {
                 setValueSi(true)
 
                 jsConfetti.addConfetti({
-                  emojis: ['😍', '🥰', '❤️', '😘'],
+                  emojis: ['😍', '🥰', '💚', '🐛'],
                   emojiSize: 70,
                   confettiNumber: 80,
                 })
 
-              }} className={`bg-green-500 text-white font-bold p-2 rounded-md text-xl h-${agrandar}`} style={{ height: agrandar }}>
+              }} className={`bg-blue-500 text-white font-bold p-2 rounded-md text-xl h-${agrandar}`} style={{ height: agrandar }}>
                 Si
               </button>
               <button
@@ -112,16 +112,16 @@ function App() {
                 disabled={imagenCargada} // Deshabilita el botón si la imagen no se ha cargado
               >
                 {Object.keys(randomValor).length === 0 ? "No" : randomValor.description}
-                <span hidden>{document.title = Object.keys(randomValor).length === 0 ? "Paola Rodrigo ¿Quieres ser mi San Valentin?" : randomValor.description}</span>
+                <span hidden>{document.title = Object.keys(randomValor).length === 0 ? "María Moran ¿Quires estar a mi lado por siempre?" : randomValor.description}</span>
               </button>
             </div>
           </div>
         ) : (
           <div className="flex justify-center items-center flex-col">
-            <h1 className="text-4xl text-white font-bold">Sabia que dirias que si mi amor ❤️!</h1>
-            <img src="https://i.pinimg.com/originals/c6/4b/59/c64b594e04cdc0c64b4970c62cbe4f28.gif" alt="" className="mx-auto" />
-            <h1 className="text-4xl text-white font-bold">Te amo infinitamente mi vida ❤️</h1>
-            <h1 className="text-white font-bold">Con amor: tu esposo Cris </h1>
+            <h1 className="text-4xl text-white font-bold">Sabia que dirías que sí mi gushana 💚!</h1>
+            <img src="https://i.pinimg.com/originals/8b/f0/e0/8bf0e0d0c71af2d7a8aa04e2766f4443.gif" alt="" className="mx-auto" />
+            <h1 className="text-4xl text-white font-bold">Te quiero muchísimo mi bebé 💚</h1>
+            <h1 className="text-white font-bold">Con amor: tu Gushano </h1>
             <span hidden>{document.title = 'Sabia que dirias que si ❤️!'}</span>
           </div>
         )
